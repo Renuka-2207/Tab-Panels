@@ -1,0 +1,24 @@
+#list
+{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+a[role = tab]:focus-visible 
+{
+background-color:royalblue;
+color:whitesmoke;
+border:1px solid black;
+}
+a[aria-selected = true]
+{
+    background-color:darkgreen;
+    color:yellow;
+    font-size:15pt;
+    font-family:cursive;
+    border:2px inset black;
+}
+#panel-container div:not(:first-child)
+{
+    display:none;
+}

@@ -1,0 +1,25 @@
+#list 
+{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+li{
+    display:inline-block;
+}
+/* changing the color of selected tabs */
+button[aria-selected = "true"]
+{
+    background-color:green;
+    color:yellow;
+}
+button:focus
+{
+    border:1px solid black;
+    font-size:15pt;
+}
+/* Hiding the content of all the tab panels except the first */
+#tab-panel div:not(:first-child) 
+{
+    display:none;
+}

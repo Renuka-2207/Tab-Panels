@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "Tab-link.css">
+</head>
+<body>
+    <div id = tab-container">
+        <ul role = "tablist" id = "list">
+            <li role = "presentation">
+                <a role = "tab" id = "tab1" href = "#panel1" aria-selected = "true"> 1 </a>
+            </li>
+            <li role = "presentation">
+                <a role = "tab" id = "tab2" href = "#panel2" aria-selected = "false"> 2</a>
+            </li>
+            <li role = "presentation">
+                <a role = "tab" id = "tab3" href = "#panel3" aria-selected = "false"> 3 </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Creating tab panels -->
+    <div id = "panel-container">
+        <div role = "tabpanel" id = "panel1" tabindex = "0" aria-labelledby = "tab1"> 
+            <p> This is some content in tab1 </p>
+        </div>
+        <div role = "tabpanel" id = "panel2" tabindex = "0" aria-labelledby = "tab2"> 
+            <p> This is some content in tab 2 </p>
+        </div>
+        <div role = "tabpanel" id = "panel3" tabindex = "0" aria-labelledby = "tab3">
+            <p> This is some content in tab 3</p>
+        </div>
+    </div>
+    <script src = "Tab-link.js"> </script>
+    
+    
+</body>
+</html>
