@@ -36,7 +36,8 @@ function activateTab(index) {
     // Set focus on the selected tab panel
     if (selected) {
       tabPanels[i].style.display = "block";
-      tabPanels[i].focus();
+      //Maintaining the focus on the selected tab.
+      tabs[i].focus();
     } else {
       tabPanels[i].style.display = "none";
     }
