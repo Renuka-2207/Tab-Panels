@@ -29,14 +29,19 @@ function activateTab(index) {
     tabs.forEach((tab, i) => {
         const selected = i === index;
         tab.setAttribute("aria-selected", selected);
+        //Only selected tab should receive tab focus.
+        tab.setAttribute("tabindex", selected ?"0" : "-1")
         tabPanels[i].hidden = !selected;
-        //Displaying the selected tab panel
-        tabPanels[i].style.display = "block";
-        //Placing the focus on the current tab panel
-        tabPanels[i].focus();
         //Hiding the other tab panels
-        if (!selected) {
+        if (selected) {
+            //Displaying the selected tab panel
+            tabPanels[i].style.display = "block";
+            //Placing the focus on the current tab panel
+            tabPanels[index].focus();                
+        } else {
             tabPanels[i].style.display = "none";
         }      
     })
 };
+
+

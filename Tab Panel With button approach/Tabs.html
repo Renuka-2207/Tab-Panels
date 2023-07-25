@@ -10,28 +10,28 @@
     <div id  = "tab-container">
         <ul id = "list" role = "tablist">
             <li role = "presentation">
-                <button role = "tab" id = "tab1" href = "#panel1" aria-selected = "true"> 1 </button>
+                <button role = "tab" id = "tab1" href = "#panel1" aria-selected = "true"> Home </button>
             </li>
             <li role = "presentation">
-                <button role = "tab" id = "tab2" href = "#panel2" aria-selected = "false"> 2 </button>
+                <button role = "tab" id = "tab2" href = "#panel2" aria-selected = "false" tabindex = "-1"> Product </button>
             </li>
             <li role = "presentation">
-                <button role = "tab" id = "tab3" href = "#panel3" aria-selected = "false"> 3 </button>
+                <button role = "tab" id = "tab3" href = "#panel3" aria-selected = "false" tabindex = "-1"> Services  </button>
             </li>
         </ul>
     </div>
 
     <div id = "tab-panel">
         <div role = "tabpanel" id = "panel1" class = "tab-panel" aria-labelledby = "tab1" tabindex = "0"> 
-            <p> This is some content in tab 1 </p>
+            <p> This is some content in Home tab. </p>
         </div>
 
         <div role = "tabpanel" id = "panel2"class = "tab-panel" aria-labelledby = "tab2" tabindex = "0">
-            <p> This is some content in tab 2.</p>
+            <p> This is some content in Product tab .</p>
         </div> 
 
         <div role = "tabpanel" id = "panel3" class = "tab-panel" aria-labelledby = "tab3" tabindex = "0">
-        <p> This is some content in tab 3 </p>
+        <p> This is some content in Services tab. </p>
     </div>
     </div>
     <script src = "Tabs.js"> </script>
